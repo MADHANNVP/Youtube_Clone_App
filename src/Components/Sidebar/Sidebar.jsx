@@ -93,7 +93,7 @@ const Sidebar = ({sidebar ,category ,setcategory}) => {
     ]
 
     return (
-        <div className={`sidebar ${sidebar?'':'small-sidebar'} `}>
+        <div className={`sidebar ${sidebar?'':'small-sidebar'} hidden md:flex`}>
             {
                 sidebardetails.map((item, index) => (
                     <div key={index} className='sidebar-item' onClick={() => {setcategory(item.category)}}>

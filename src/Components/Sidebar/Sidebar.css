@@ -1,5 +1,4 @@
 .sidebar{
-    display:flex;
     flex-direction:column;
     gap:16px;
     padding-top:10px;
@@ -68,36 +67,4 @@
 
 .active{
     border-bottom:2px solid red;
-}
-
-@media (max-width:800px) {
-    .sidebar{
-    display:flex;
-    flex-direction:row;
-    gap:2px;
-    padding-top:10px;
-    padding-right:15px;
-    border-right:1px solid rgba(0, 0, 0, 0.1);
-}
-
-
-.sidebar-item{
-     gap:2px;
- }
-.sidebar-item .sidebar-label {
-    display:none;
-}
-
-.subscribed--list
-{
-    display:none;
-}
-
-.small-sidebar .sidebar-item .sidebar-label{
-    display:none;
-}
-
-.small-sidebar .subscribed--title {
-    display:none;
-}
 }
