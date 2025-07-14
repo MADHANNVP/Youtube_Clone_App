@@ -1,70 +1,70 @@
-.sidebar{
-    flex-direction:column;
-    gap:16px;
-    padding-top:10px;
-    padding-right:15px;
-    border-right:1px solid rgba(0, 0, 0, 0.1);
+.sidebar {
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.sidebar-item{
-    display:flex;
-    margin-left:30px;
-    gap:20px;
-    cursor:pointer;
+.sidebar-item {
+    display: flex;
+    margin-left: 30px;
+    gap: 20px;
+    cursor: pointer;
 }
 
 .sidebar-item .sidebar-icon {
-    width:22px;
-    height:22px;
-    border-bottom:2px solic transparent;
+    width: 22px;
+    height: 22px;
+    border-bottom: 2px solic transparent;
 }
 
 .sidebar-item .sidebar-label {
-    font-size:17px;
-    display:none;
+    font-size: 17px;
+    display: none;
 }
 
-.small-sidebar .sidebar-item .sidebar-label{
-    display:block;
+.small-sidebar .sidebar-item .sidebar-label {
+    display: block;
 }
 
-.subscribed--title{
-    padding-left:30px;
-    display:none;
+.subscribed--title {
+    padding-left: 30px;
+    display: none;
 }
 
 .subscribed--list {
-    margin-left:30px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.subscribed--item{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.subscribed--item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.subscribed--icon{
-    width:22px;
+.subscribed--icon {
+    width: 22px;
     border-radius: 50%;
 }
 
-.subscribed--label{
-    font-size:16px;
-    display:none;
+.subscribed--label {
+    font-size: 16px;
+    display: none;
 }
 
 
-.small-sidebar .subscribed--list .subscribed--item .subscribed--label{
-    display:block;
+.small-sidebar .subscribed--list .subscribed--item .subscribed--label {
+    display: block;
 }
 
 .small-sidebar .subscribed--title {
-    display:block;
+    display: block;
 }
 
-.active{
-    border-bottom:2px solid red;
+.active {
+    border-bottom: 2px solid red;
 }

@@ -1,0 +1,29 @@
+  .video-container iframe {
+      width: 100%;
+      height: 250px;
+  }
+
+  @media (min-width:400px) {
+      .video-container iframe {
+          height: 250px;
+      }
+  }
+
+  @media (min-width:600px) {
+      .video-container iframe {
+          height: 350px;
+      }
+  }
+
+  @media (min-width:800px) {
+      .video-container iframe {
+          height: 440px;
+      }
+  }
+
+  @media (min-width:1000px) {
+      .video-container iframe {
+          height: 600px;
+          padding: 25px;
+      }
+  }

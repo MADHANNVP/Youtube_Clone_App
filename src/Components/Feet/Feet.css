@@ -1,24 +1,26 @@
-.feet{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px ,1fr));
-    grid-column:16px;
-    grid-rows:10px;
-    margin-top:15px;
-    gap:15px;
-    padding:10px;
-}
-.thumbnails{
-    border-radius:14px;
-}
-.feet--title{
-    font-weight:bold;
-    padding-top:5px;
+.feet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 16px;
+    grid-rows: 10px;
+    margin-top: 15px;
+    gap: 15px;
+    padding: 10px;
 }
 
-.feet--chennaltitle{
-    color:rgb(65, 62, 62);
+.thumbnails {
+    border-radius: 14px;
 }
 
-.feet-view{
-    color:rgb(65, 62, 62);
+.feet--title {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.feet--chennaltitle {
+    color: rgb(65, 62, 62);
+}
+
+.feet-view {
+    color: rgb(65, 62, 62);
 }

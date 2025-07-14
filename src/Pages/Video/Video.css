@@ -1,0 +1,15 @@
+@media (min-width:1400px) {
+    .videocontainer {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .playvideo {
+        width: 70%;
+    }
+
+    .recomentedvideo {
+        width: 30%;
+    }
+}
