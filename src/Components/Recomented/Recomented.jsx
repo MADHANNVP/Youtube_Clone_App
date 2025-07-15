@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import './Recomented.css'
 import { API_KEY } from '../../data'
 import { conver_value } from '../../data'
 import moment from 'moment'
@@ -20,18 +21,18 @@ const Recomented = ({ CategoryId }) => {
         console.log(apidata)
     }, [CategoryId])
     return (
-        <div className='flex flex-col gap-2'>
+        <div className='recomented--video--container'>
             {
                 apidata?.map((item, index) => (
                     <Link to={`/Video/${CategoryId}/${item.id}`} key={index}>
-                        <div className='flex gap-1 w-[100%]'>
-                            <div className='w-[60%]'>
-                                <img src={item.snippet.thumbnails.high.url} alt="" className='w-full h-44 rounded-xl object-cover md:h-fit md:w-fit' />
+                        <div className='recomented--video--card'>
+                            <div className='section-1'>
+                                <img src={item.snippet.thumbnails.high.url} alt="" className='recomented--videio--thumbnail' />
                             </div>
-                            <div className='w-[40%]'>
-                                <h2 className='text-2xl  md:text-[14px] font-semibold mt-8 mb-1 ' >{item.snippet.title}</h2>
-                                <h3 className=' text-xl md:text-[13px]'>{item.snippet.channelTitle}</h3>
-                                <div className='flex text-sm md:text-[12px]'>
+                            <div className='section-2'>
+                                <h2 className=' recomented--video--title ' >{item.snippet.title.slice(0, 45)}</h2>
+                                <h3 className=' recomented--video--channelname'>{item.snippet.channelTitle}</h3>
+                                <div className='recomented--viewcount-contain'>
                                     <p>{conver_value(item.statistics?.viewCount)} views &bull;</p>
                                     <p> {moment(item.snippet.publishedAt).fromNow()}</p>
                                 </div>
